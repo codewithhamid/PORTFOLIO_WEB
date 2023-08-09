@@ -2,6 +2,11 @@ import express from "express";
 import cookieParser from "cookie-parser";
 import path, { dirname } from "path";
 import cors from 'cors';
+import { fileURLToPath} from "url";
+
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname=path,dirname(__filename);
 export const app = express();
 
 app.use(express.json({ limit: "50mb" }));
