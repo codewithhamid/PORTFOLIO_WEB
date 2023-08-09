@@ -6,7 +6,7 @@ import { fileURLToPath} from "url";
 
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname=path,dirname(__filename);
+const __dirname=path.dirname(__filename);
 export const app = express();
 
 app.use(express.json({ limit: "50mb" }));
